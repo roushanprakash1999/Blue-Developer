@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+		<title>About Company</title>
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				<h1><span class="blue-text">Blue</span> Developer Directory</h1>
+				<h2>Find A Developer <span class="white-text">NOW</span></h2>
+			 </header>
+				
+			<nav id="menu">
+				<ul>
+					<li class="menuitem"><a href="Home.html">Home</a></li>
+					<li class="menuitem"><a href="About.html">About Us</a></li>
+					<li class="menuitem"><a href="Browse.html">Browse Developers</a></li>
+					<li class="menuitem"><a href="Contact.html">Contact Us</a></li>
+					<li class="menuitem"><a href="Register.html">Register for a developer</a></li>
+				</ul>
+			</nav>
+			
+			<nav id="links">
+				<h3>Links</h3>
+				<ul>
+					<li><a href="Browse.html">SEO</a></li>
+					<li><a href="Browse.html">PHP</a></li>
+					<li><a href="Browse.html">Ajax</a></li>
+					<li><a href="Browse.html">jQuery</a></li>
+					<li><a href="Browse.html">Web design</a></li>
+					<li><a href="Browse.html">Web Programming</a></li>
+					<li><a href="Browse.html">Content Creation</a></li>
+					<li><a href="Browse.html">Internet Marketing</a></li>
+					<li><a href="Browse.html">XHTML Templates</a></li>
+				</ul>
+			</nav>
+			
+			<section>
+				<h2>
+					Welcome to Blue Developer Directory!
+				</h2>
+				<img class="float" src="Images/web.jpg" alt="web developer directory">
+				<h3>
+					Who Are We?
+				</h3>
+				<p>
+					We are a fictional website and service that lists top web developers around the world. Search and browse fictional web developers on our website absolutely FREE!
+				</p>
+				<h3>
+					What Skills Do Our Developers Have?
+				</h3>
+				<p>
+					Our listed fictional web developers skill ranges from Graphic design with Photoshop, Illustrator and Fireworks to markup languages like HTML5, XHTML and XML to programming languages such as Javascript, PHP, Python and ASP
+				</p>
+				<video id="blue" width="600" height="400" controls>
+					<source src="Videos/ad.mp4" type="video/mp4">
+						Your browser does not support videos.
+				</video>
+				
+				<div style="width:400px;"> 
+					<button onclick="playPause()" style="margin:5px">Play/Pause</button> 
+					<button onclick="makeBig()" style="margin:5px">Big</button>
+					<button onclick="makeSmall()" style="margin:5px">Small</button>
+					<button onclick="makeNormal()" style="margin:5px">Normal</button>
+				</div> 
+				
+				<script>
+					var vid=document.getElementById('blue');
+					
+					function playPause()
+					{
+						if (vid.paused)
+						{
+							vid.play();
+						}
+						else
+						{
+							vid.pause();
+						}
+					}
+
+					function makeBig()
+					{
+						vid.width=680;
+					}
+					
+					function makeSmall()
+					{
+						vid.width=400;
+					}
+					
+					function makeNormal()
+					{
+						vid.width=600;
+					}
+				</script>
+			</section>
+			
+		</div><!--end of container-->
+	</body>
+</html>

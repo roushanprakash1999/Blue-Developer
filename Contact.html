@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Find A Developer</title>
+	</head>
+
+	<body>
+		<div id="container">
+			<header>
+				<h1><span class="blue-text">Blue</span> Developer Directory</h1>
+				<h2>Find A Developer <span class="white-text">NOW</span></h2>
+			 </header>
+				
+			<nav id="menu">
+				<ul>
+					<li class="menuitem"><a href="Home.html">Home</a></li>
+					<li class="menuitem"><a href="About.html">About Us</a></li>
+					<li class="menuitem"><a href="Browse.html">Browse Developers</a></li>
+					<li class="menuitem"><a href="Contact.html">Contact Us</a></li>
+					<li class="menuitem"><a href="Register.html">Register for a developer</a></li>
+				</ul>
+			</nav>
+			
+			<nav id="links">
+				<h3>Links</h3>
+				<ul>
+					<li><a href="Browse.html">SEO</a></li>
+					<li><a href="Browse.html">PHP</a></li>
+					<li><a href="Browse.html">Ajax</a></li>
+					<li><a href="Browse.html">jQuery</a></li>
+					<li><a href="Browse.html">Web design</a></li>
+					<li><a href="Browse.html">Web Programming</a></li>
+					<li><a href="Browse.html">Content Creation</a></li>
+					<li><a href="Browse.html">Internet Marketing</a></li>
+					<li><a href="Browse.html">XHTML Templates</a></li>
+				</ul>
+			</nav>
+
+			<section>
+				<h3 class="blue-bg">Please use this form to contact a member of our website team</h3><br>
+				<form action="process.java" method="post">
+					<label for="name">Full Name :</label>
+					<input type="text" name="name"><br><br>
+					<label for="email">E-mail Address :</label>
+					<input type="email" name="email"><br><br>
+					<label for="number">Mobile :</label>
+					<input type="tel" name="number"><br><br>
+					<label for="call">Choose Best Time To Call :</label>
+					<input type="radio" name="call" value="morning" checked>Morning
+					<input type="radio" name="call" value="afternoon">Afternoon
+					<input type="radio" name="call" value="evening">Evening
+					<br><br>
+					<label for="location">Location :</label>
+					<input list="location">
+					<datalist id="location">
+						<option value="New York">
+						<option value="London">
+						<option value="Chicago">
+						<option value="Sydney">
+					</datalist>
+					<br><br>
+					<fieldset>
+						<legend>Information : </legend><br>
+						<script type="text/javascript">
+						function updateTextInput(val)
+						{
+							document.getElementById('textInput').value=val;
+						}
+						</script>
+						<label for="budget">Budget :</label>
+						<input id="budget" type="range" name="budget" min="500" max="10000" onchange="updateTextInput(this.value)">
+						<input type="text" id="textInput">
+						<br><br>
+						<label for="services">Services Needed : (Check all that apply)</label>
+						<br><br>
+						<table>
+							<tr>
+								<td><input type="checkbox" name="services" value="html">HTML</td>
+								<td><input type="checkbox" name="services" value="php">PHP</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="services" value="asp">ASP</td>
+								<td><input type="checkbox" name="services" value="java">JAVA</td>
+							</tr>	
+							<tr>
+								<td><input type="checkbox" name="services" value="c++">C++</td>
+								<td><input type="checkbox" name="services" value="design">Design</td>
+							</tr>
+						</table>
+						<br>
+						<label for="website">Website :</label>
+						<input type="url" name="website"><br><br>
+						<label for="date">Date of Birth :</label>
+						<input type="date" name="date"><br><br>
+						<label for="color">Website color :</label>
+						<input type="color" name="color"><br><br>
+						<label for="number">Number of pages :</label>
+						<input type="number" name="number"><br><br>
+						</fieldset>
+					<br>	
+					<input type="submit" name="submit" value="Submit" style="margin:20px">
+					<input type="reset" name="reset" value="Reset" style="margin:20px">
+				</form>			
+			</section>
+			
+		</div><!--end of container-->
+	</body>
+</html>
